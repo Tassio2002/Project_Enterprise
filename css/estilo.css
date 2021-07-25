@@ -1,0 +1,707 @@
+/**O objetivo desse projeto é aprender a manipular novos tipos de sessoes, o tema vai ser uma empresa de desenvolvimento de software hipotetica**/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+html,body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+/**formatação**/
+
+/**header da pagina**/
+header{
+    padding: 20px 2%;
+}
+
+header.logo img{
+    float: left;
+    width: 64px;
+}
+
+nav.menu-mobile{
+    width: 42px;
+    height: 42px;
+    float: right;
+    display: none;
+    background-image: url(../imagens/check-list.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+nav.menu-mobile ul{
+    width: 100%;
+    position: absolute;
+    top: 88px;
+    left: 0;
+    text-align: center;
+    background-color: rgba(115, 201, 201, 0.37);
+    display: none;
+    z-index: 999;
+}
+
+nav.menu-mobile ul li{
+    text-transform: uppercase;
+}
+
+nav.menu-mobile ul li{
+    padding: 10px 0;
+}
+
+nav.menu-mobile ul li a{
+    color: rgba(20, 62, 202, 0.705);
+}
+
+header nav.menu-desktop{
+    float: right;
+}
+
+header nav.menu-desktop ul{
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li{
+    float: left;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 0 20px; 
+}
+
+header nav ul a{
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(120, 120, 120);
+    font-weight: bold;
+}
+
+header nav ul a:hover{
+    color: rgb(228, 173, 64);
+}
+/** **/
+
+/*Seção mosaico*/
+.mosaico-single{
+    width: calc(100% / 5);
+    float: left;
+}
+
+.mosaico-single div{
+    width: 100%;
+    padding-top: 100%;
+    background-color: gray;
+    border: 5px solid white ;
+    box-shadow: 8px 5px 18px 2px rgba(134, 120, 120, 0.45);
+}
+
+.img-mosaico-single-1{
+    background-image: url(../imagens/mosaico/img1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.img-mosaico-single-2{
+    background-image: url(../imagens/mosaico/img2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.img-mosaico-single-3{
+    background-image: url(../imagens/mosaico/img3.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.img-mosaico-single-4{
+    background-image: url(../imagens/mosaico/img4.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.img-mosaico-single-5{
+    background-image: url(../imagens/mosaico/img5.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.img-mosaico-single-6{
+    background-image: url(../imagens/mosaico/img6.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.img-mosaico-single-7{
+    background-image: url(../imagens/mosaico/img7.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.img-mosaico-single-8{
+    background-image: url(../imagens/mosaico/img8.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.img-mosaico-single-9{
+    background-image: url(../imagens/mosaico/img9.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.img-mosaico-single-10{
+    background-image: url(../imagens/mosaico/img10.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/** **/
+
+/**Seção serviços**/
+section.servicos >  .container{
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: -30px;
+}
+
+section.servicos > .container > .box-1 h2{
+    color: rgb(65, 55, 55);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+section.servicos > .container > .box-1 p{
+    color: white;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+section.servicos > .container > .box-1:nth-of-type(1){
+    width: 30%;
+    padding: 45px 2%;
+    background-color: rgb(115,201,201);
+    background-image: url(../imagens/care-icon.png);
+    background-size: 40px 40px;
+    background-position: center calc(100% - 10px);
+    background-repeat: no-repeat;
+}
+
+section.servicos > .container > .box-1:nth-of-type(2){
+    width: 40%;
+    padding: 72px 2%;
+    background-color: rgb(228,173,64);
+    background-image: url(../imagens/site-icon.png);
+    background-size: 64px 64px;
+    background-position: center calc(100% - 10px);
+    background-repeat: no-repeat;
+    box-shadow: 5px 4px 14px 6px rgba(255,127,55,0.51);
+    z-index: 999;
+}
+
+section.servicos > .container > .box-1:nth-of-type(3){
+    width: 30%;
+    padding: 45px 2%;
+    background-color: rgb(115,201,201);
+    background-image: url(../imagens/offer-icon.png);
+    background-size: 40px 40px;
+    background-position: center calc(100% - 10px);
+    background-repeat: no-repeat;
+}
+
+section.perfil-container{
+    padding: 40px 0;
+}
+
+section.perfil-container .container{
+    max-width: 800px;
+}
+
+section.perfil-container .perfil-wraper{
+    padding-top: 60%;
+    position: relative;
+}
+
+section.perfil-container .perfil-wraper2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+section.perfil-container .img-perfil{
+    width: 55%;
+    height: 100%;
+    background-image: url(../imagens/empresa.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+    border-radius: 10px;
+}
+
+section.perfil-container .texto-perfil{
+    width: 60%;
+    padding: 0 30px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+}
+
+section.videos{
+    padding: 50px 0;
+}
+
+section.videos .box-video{
+    width: 49%;
+    float: left;
+    padding-top: 30%;
+    position: relative;
+    border: rgb(228, 173, 64) 4px solid;
+    margin-left: 0.5% ;
+}
+
+section.videos iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section.produtos{
+    padding: 30px;
+}
+
+section.produtos > h2{
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 29px;
+    border-top: 3px solid rgb(115, 201, 201);
+}
+
+section.produtos > .container{
+    padding: 30px 0;
+}
+section.produtos .p-container{
+    width:  50%;
+    float: left;
+}
+
+.p-single{
+    padding: 20px;
+    margin: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 2px rgba(180,166,176,0.72);
+}
+
+.p-single h2{
+    color: rgb(59, 52, 52);
+}
+
+.p-single p{
+    color: rgb(122, 119, 119);
+}
+
+section.depoimentos{
+    background-color: rgba(255, 245, 245, 0.541);
+    border-top: 3px solid black;
+}
+
+section.depoimentos > h2{
+    padding: 30px 0;
+    color: rgb(59, 52, 52);
+    text-align: center;
+}
+
+section.depoimentos .container{
+    padding: 30px 0;
+    max-width: 400px;
+}
+
+section.depoimentos .d-single{
+    text-align: center;
+    padding: 0 2%;
+}
+
+section.depoimentos .d-single quote{
+    font-size: 16px;
+    color: rgb(105, 99, 99);
+}
+
+section.depoimentos .d-img{
+    padding-top: 30px;
+}
+
+section.depoimentos .d-img span{
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    top: -12px;
+}
+
+.d-img img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+section.social .insta{
+    width: 100%;
+    float: left;
+    padding: 30px 0;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.459);
+    line-height: 30px;
+}
+
+section.social .insta img{
+    width: 32px;
+    margin-bottom: 10px;
+}
+
+.social-mosaico{
+    width: 100%;
+    float: left;
+}
+
+.social-mosaico-single{
+    width: calc(100% / 8);
+    padding-top: calc(100% / 8);
+    float: left;
+    background-color: green;
+    border: 4px solid rgb(255, 255, 255);
+}
+
+section.social .whats{
+    width: 100%;
+    float: left;
+    padding: 30px 0;
+    text-align: center;
+    background-color: rgb(128, 128, 128);
+    color: white;
+    line-height: 30px;
+    border-bottom: 3px solid black;
+}
+
+section.social .whats img{
+    width: 32px;
+    margin-bottom: 10px;
+}
+
+section.social .social-mosaico-single:nth-of-type(1){
+    background-image: url(../imagens/mosaico-2/img1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+section.social .social-mosaico-single:nth-of-type(2){
+    background-image: url(../imagens/mosaico-2/img2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+section.social .social-mosaico-single:nth-of-type(3){
+    background-image: url(../imagens/mosaico-2/img3.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+section.social .social-mosaico-single:nth-of-type(4){
+    background-image: url(../imagens/mosaico-2/img4.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+section.social .social-mosaico-single:nth-of-type(5){
+    background-image: url(../imagens/mosaico-2/img4.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+section.social .social-mosaico-single:nth-of-type(6){
+    background-image: url(../imagens/mosaico-2/img6.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+section.social .social-mosaico-single:nth-of-type(7){
+    background-image: url(../imagens/mosaico-2/img7.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+section.social .social-mosaico-single:nth-of-type(8){
+    background-image: url(../imagens/mosaico-2/img8.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+section.contato{
+    padding: 60px 0;
+    border-bottom: 3px solid black;
+}
+
+section.contato > h2{
+    padding: 30px 0;
+    color: rgb(59, 52, 52);
+    text-align: center;
+}
+
+section.contato form{
+    width: 100%;
+    max-width: 500px;
+    margin: 15px auto;
+}
+
+section.contato span{
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+
+.form-w100{
+    width: 100%;
+}
+
+.form-w50{
+    width: 50%;
+}
+
+.form-w100,.form-w50{
+    float: left;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+.form-w100 input[type=text]{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    border: 1px solid rgb(148, 144, 144);
+    margin-bottom: 9px;
+}
+
+.form-w50 input[type=email]{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    border: 1px solid rgb(148, 144, 144);
+    margin-bottom: 9px;
+}
+
+.form-w50 input[type=text]{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    border: 1px solid rgb(148, 144, 144);
+    margin-bottom: 9px;
+}
+
+.form-w100 textarea{
+    width: 100%;
+    height: 121px;
+    padding: 5px;
+    margin-top: 8px;
+    resize: none;
+}
+
+.form-w100 input[type=submit]{
+    width: 100px;
+    height: 35px;
+    max-width: 10px auto;
+    background-color: rgb(115, 201, 201);
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.form-w100 input[type=submit]:hover{
+    background-color: rgb(228, 173, 64);
+}
+
+footer{
+    padding: 40px 2%;
+    background-color: rgb(33, 150, 243);
+}
+
+footer .container{
+    max-width: 900px;
+}
+
+footer .footer-block{
+    width: 33.3%;
+    float: left;
+}
+
+footer .footer-block{
+    color: white;
+}
+
+footer.copy{
+    padding: 15px 0;
+    text-align: center;
+    font-size: 17px;
+    color: rgb(153, 195, 228);
+    background-color: rgb(26, 120, 195);
+}
+
+footer.copy a{
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+}
+
+
+/**media queries**/
+@media screen and (max-width: 768px){
+    nav.menu-desktop{
+        display: none;
+    }
+
+    nav.menu-mobile{
+        display: block;
+    }
+
+    section.servicos >  .container{
+        flex-direction: column;
+    }
+
+    section.servicos > .container > .box-1:nth-of-type(1){
+        width: 90%;
+        max-width: 450px;
+        padding: 45px 2%;
+        background-color: rgb(115,201,201);
+        background-image: url(../imagens/care-icon.png);
+        background-size: 40px 40px;
+        background-position: center calc(100% - 10px);
+        background-repeat: no-repeat;
+    }
+    
+    section.servicos > .container > .box-1:nth-of-type(2){
+        width: 94%;
+        max-width: 500px;
+        padding: 72px 2%;
+    }
+    
+    section.servicos > .container > .box-1:nth-of-type(3){
+        width: 90%;
+        max-width: 450px;
+        padding: 45px 2%;
+    }
+
+    section.perfil-container .perfil-wraper{
+        padding-top: 0;
+    }
+
+    section.perfil-container .perfil-wraper2{
+        display: inline-block;
+        text-align: center;
+        height: auto;
+        position: static;
+
+    }
+
+    section.perfil-container .img-perfil{
+        width: 60%;
+        height: 60%;
+        padding-top: 110%;
+        display: inline-block;
+    }
+    
+    section.perfil-container .texto-perfil{
+        width: 100%;
+        text-align: justify;
+        display: inline-block;
+    }
+
+    section.videos{
+        text-align: center;
+    }
+
+    section.videos .box-video{
+        width: 80%;
+        padding-top: 50%;
+        position: relative;
+        border: rgb(228, 173, 64) 2px solid;
+        margin-left: 0.5% ;
+        display: inline-block;
+        float: none;
+    }
+    
+    section.produtos .p-container{
+        width:  100%;
+        float: left;
+    }
+
+    .p-single{
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 2px rgba(180,166,176,0.72);
+    }
+
+    .social-mosaico-single{
+        width: calc(100% / 4);
+        padding-top: calc(100% / 4);
+        float: left;
+        background-color: green;
+        border: 4px solid rgb(255, 255, 255);
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    footer .footer-block{
+        width: 100%;
+        float: none;
+        margin-top: 20px;
+    }
+} 
+
+@media screen and (max-width: 580px){
+    section.perfil-container .img-perfil{
+        width: 80%;
+    }
+
+    section.videos .box-video{
+        width: 100%;
+        padding-top: 80%;        
+    }
+
+    section.produtos{
+        padding: 25px;
+    }
+
+    .form-w50{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    header .logo img{
+        width: 50x;
+    }
+}
+
+
